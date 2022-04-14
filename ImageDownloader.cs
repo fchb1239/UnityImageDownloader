@@ -27,7 +27,7 @@ public class ImageDownloader : MonoBehaviour
         yield return imageGet.SendWebRequest();
 
         //Creates and loads texture
-        Debug.Log("Creating and loadingtexture");
+        Debug.Log("Creating and loading texture");
         Texture2D tex = new Texture2D(width, height, TextureFormat.RGB24, false);
         tex.LoadImage(imageGet.downloadHandler.data);
 
